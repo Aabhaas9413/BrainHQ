@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/",
+    "/exercises",
+    "/help",
+    "/login",
+    "/partners",
+    "/science",
+    "/signup",
+    "/subscribe"
+  ]
+}
