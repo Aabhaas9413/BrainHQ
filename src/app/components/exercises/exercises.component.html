@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Try a Few Exercises</h2>
+    <p>Experience our brain training exercises to improve your memory, attention, and brain speed.</p>
+    <div class="row">
+      <div class="col-md-3" *ngFor="let exercise of exercises">
+        <div class="card mb-3">
+          <img src="{{ exercise.img }}" class="card-img-top" alt="{{ exercise.name }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ exercise.name }}</h5>
+            <p class="card-text">{{ exercise.description }}</p>
+            <a href="{{ exercise.link }}" target="_blank" class="btn btn-primary">Try Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

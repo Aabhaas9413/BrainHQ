@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>We Work Well with Others</h2>
+    <p>
+      BrainHQ collaborates with libraries, health insurance companies, sports organizations, educational institutions,
+      and the military to provide brain training services.
+    </p>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let partner of partners">
+        <img src="{{ partner.img }}" alt="{{ partner.name }}" class="img-fluid">
+        <p>{{ partner.name }}</p>
+      </div>
+    </div>
+  </div>
+  
