@@ -1,14 +1,22 @@
-<div class="container">
-    <h2>We Work Well with Others</h2>
-    <p>
-      BrainHQ collaborates with libraries, health insurance companies, sports organizations, educational institutions,
-      and the military to provide brain training services.
+<div class="container" style="background: linear-gradient(to bottom, #ffffff, #f7f7f7); color: #333; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+    <h2 class="text-center" style="font-size: 2.5rem; font-weight: bold; color: #6610f2;">We Work Well with Others</h2>
+    <p class="text-center" style="font-size: 1.2rem; color: #6f42c1;">
+        BrainHQ collaborates with libraries, health insurance companies, sports organizations, educational institutions,
+        and the military to provide brain training services.
     </p>
-    <div class="row">
-      <div class="col-md-4" *ngFor="let partner of partners">
-        <img src="{{ partner.img }}" alt="{{ partner.name }}" class="img-fluid">
-        <p>{{ partner.name }}</p>
-      </div>
+    <div class="row mt-4">
+        <div class="col-md-4 mb-4" *ngFor="let partner of partners">
+            <div class="card" style="border: none; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <svg class="card-img-top" width="100%" height="150" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150">
+                    <rect width="200" height="150" fill="#6610f2" opacity="0.2"></rect>
+                    <text x="50%" y="50%" fill="#6610f2" font-size="20" font-family="Arial, sans-serif" text-anchor="middle" dy=".3em">
+                        {{ partner.name }}
+                    </text>
+                </svg>
+                <div class="card-body text-center" style="background: #ffffff; border-radius: 0 0 10px 10px;">
+                    <h5 class="card-title" style="color: #2c3e50;">{{ partner.name }}</h5>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  
+</div>
