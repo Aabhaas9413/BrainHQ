@@ -1,1 +1,33 @@
-<p>login works!</p>
+<div class="container" style="background: linear-gradient(to bottom, #ffffff, #f7f7f7); color: #333; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 500px; margin-top: 50px;">
+    <h2 class="text-center" style="font-size: 2.5rem; font-weight: bold; color: #6610f2;">Login</h2>
+    <form (ngSubmit)="onLoginSubmit()" #loginForm="ngForm">
+        <div class="mb-3">
+            <label for="email" class="form-label" style="color: #6f42c1;">Email</label>
+            <input type="email" id="email" class="form-control" [(ngModel)]="loginModel.email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label" style="color: #6f42c1;">Password</label>
+            <input type="password" id="password" class="form-control" [(ngModel)]="loginModel.password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100" style="background-color: #6f42c1; border: none;">Login</button>
+    </form>
+
+    <hr class="my-4">
+
+    <h2 class="text-center" style="font-size: 2.5rem; font-weight: bold; color: #6610f2;">Register</h2>
+    <form (ngSubmit)="onRegisterSubmit()" #registerForm="ngForm">
+        <div class="mb-3">
+            <label for="registerName" class="form-label" style="color: #6f42c1;">Name</label>
+            <input type="text" id="registerName" class="form-control" [(ngModel)]="registerModel.name" name="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="registerEmail" class="form-label" style="color: #6f42c1;">Email</label>
+            <input type="email" id="registerEmail" class="form-control" [(ngModel)]="registerModel.email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="registerPassword" class="form-label" style="color: #6f42c1;">Password</label>
+            <input type="password" id="registerPassword" class="form-control" [(ngModel)]="registerModel.password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100" style="background-color: #6f42c1; border: none;">Register</button>
+    </form>
+</div>
